@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel - Funcional </title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
+  
+</head>
+<body>
+<header>
+    <div class="container">
+        <a href="/" class="textoheadder" > 
+            <img src="/images/1logogif.gif" alt="" width="50" height="50"> 
+            Painel Funcional</a>
+        <form method="GET" action="/search">
+            <input type="search" name="q" placeholder="Pesquise"  value="{{ query }}"/>
+        </form>
+    </div>
+</header>
+<nav>
+    <ul>
+        <li class="{{#menu.todos}}active{{/menu.todos}}"><a href="/">Home</a></li>
+        <li class="{{#menu.pontobiometrico}}active{{/menu.pontobiometrico}}"><a href="/pontobiometrico">Ponto Biometrico</a></li>
+        <li class="{{#menu.sigs}}active{{/menu.sigs}}"><a href="/sigs">SIGS</a></li>
+        <li class="{{#menu.samu}}active{{/menu.samu}}"><a href="/samu">SAMU</a></li>
+        <li class="{{#menu.cisms}}active{{/menu.cisms}}"><a href="/cisms">Controle de CI</a></li>
+        <li class="{{#menu.ghbam}}active{{/menu.ghbam}}"><a href="/ghbam">GHBAM</a></li>
+        <li class="{{#menu.pacs}}active{{/menu.pacs}}"><a href="/pacs">PACS</a></li>
+        <li class="{{#menu.ris}}active{{/menu.ris}}"><a href="/ris">RIS</a></li>
+        <li class="{{#menu.esus}}active{{/menu.esus}}"><a href="/esus">E-SUS</a></li>
+    </ul>
+</nav>

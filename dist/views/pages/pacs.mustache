@@ -1,0 +1,35 @@
+{{>partials/header}}
+
+
+{{#banner}}
+<section class="banner" style="background-image: url('/images/{{background}}')">{{title}}</section>
+<h2>{{title}} {{descricao}}</h2>
+{{/banner}}
+
+<div class="containerbutton">
+    <div class="buttons">
+    <a href="http://pacs.itaguai.rj.gov.br:9596/">Acessar o Site</a>
+    </div>
+</div>
+
+
+<section>
+
+  
+
+<!--iframe faz exibir um site dentro do outro -->
+<div>
+    <iframe name="iframe" class="iframe" id="iframe" src="http://pacs.itaguai.rj.gov.br:9596/" 
+        frameborder="100px" cellspacing="0"
+        sandbox="allow-same-origin  allow-scripts allow-top-navigation allow-forms allow-popups-to-escape-sandbox allow-popups"
+        style="border-style: none; padding: 0px; "></iframe>
+</div>
+<div>
+    </div>  
+
+    </section>
+   
+
+    <p><a href="https://inovarepontodigital.com.br/login" target="Ponto Biometrico"></a></p>
+
+{{>partials/footer}}

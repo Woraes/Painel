@@ -1,0 +1,47 @@
+{{>partials/header}}
+
+
+{{#banner}}
+<section class="banner" style="background-image: url('/images/{{background}}')">{{title}}</section>
+<h2>{{title}} {{descricao}}</h2>
+{{/banner}}
+
+
+<div class="screen">
+    <div class="formleftside">
+        <!--<img src="/images/form.png" alt="">-->
+
+</div>
+<div class="formrightside">
+    <h1>Crie uma conta</h1><br/>
+    <form action="" method="POST" class="b7validator">
+        <label for="">
+            Seu nome:<br/>
+            <input type="text" name="name"  placeholder="Seu nome..." data-rules="required" />
+        </label>
+        <label for="">
+            Seu e-mail:<br/>
+            <input type="text" name="email"  placeholder="Seu e-mail..."/>
+        </label>
+        <label for="">
+        Sua  senha:<br/>
+            <input type="password" name="password"  placeholder="password..."/>
+        </label>
+        <label for="">
+            <input class="formbuttons" type="submit" value="Cadastrar"/>
+        </label>
+    </form>
+
+    <div>
+        Já tem uma conta?<a href=""> Faça o Login </a>
+    </div>
+</div>
+</div>
+
+
+
+
+
+
+
+{{>partials/footer}}

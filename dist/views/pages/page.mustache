@@ -1,0 +1,105 @@
+{{>partials/header}}
+
+{{#banner}}
+<section class="banner" style="background-image: url('images/{{background}}')">{{title}}</section>
+<h2>{{title}} Facilitador de acesso para os Sistemas </h2>
+{{/banner}}
+
+
+<section class="pagehome">
+<div class="container list">
+    {{#list}}
+    <div class="item">
+        <a href="{{ link }}">
+        <img src="../images/{{ image }}" class="item--image"  />
+        <div class="item--name">{{ name }}.
+        </a>
+        </div>
+        <div class="item--color">{{ descri }}</div>
+        <div class="item--genre">{{ fabri }}</div>
+     </div>   
+     {{/list}}
+    <!--    <div class="item">
+            <a href="/sigs">
+            <img src="../images/sigslogo.png" class="item--image"  />
+            <div class="item--name">SIGS.
+            </a>
+            </div>
+            <div class="item--color"></div>
+            <div class="item--genre">Inovare Soluçoes</div>
+        </div>  
+
+        <div class="item">
+            <a href="/samu">
+            <img src="../images/samugif.gif" class="item--image"  />
+            <div class="item--name">SAMU.
+            </a>
+            </div>
+            <div class="item--color"></div>
+            <div class="item--genre">Ministério da Saúde</div>
+        </div>   
+         
+        <div class="item">
+            <a href="/cisms">
+            <img src="../images/cigif.gif" class="item--image"  />
+            <div class="item--name">Controle de CI.
+            </a>
+            </div>
+            <div class="item--color"></div>
+            <div class="item--genre">WoraesApp</div>
+        </div>   
+         
+        <div class="item">
+            <a href="/ghbam">
+            <img src="../images/ghbamgif.gif" class="item--image"  />
+            <div class="item--name">GHBAM.
+            </a>
+            </div>
+            <div class="item--color"></div>
+            <div class="item--genre">ghbam</div>
+        </div>   
+         
+        <div class="item">
+            <a href="/pacs">
+            <img src="../images/pacsgif.gif" class="item--image"  />
+            <div class="item--name">PACS.
+            </a>
+            </div>
+            <div class="item--color"></div>
+            <div class="item--genre">PACSWEB</div>
+        </div>   
+         
+        <div class="item">
+            <a href="/ris">
+            <img src="../images/risgif.gif" class="item--image"  />
+            <div class="item--name">RIS.
+            </a>
+            </div>
+            <div class="item--color"></div>
+            <div class="item--genre">RISWEB</div>
+        </div>   
+         
+        <div class="item">
+            <a href="/esus">
+            <img src="../images/esusgifgif.gif" class="item--image"  />
+            <div class="item--name">E-SUS.
+            </a>
+            </div>
+            <div class="item--color"></div>
+            <div class="item--genre">Secretária de Saúde</div>
+        </div>   <-->
+</div>
+
+<!-- quando list não existir -->
+{{^list}}
+
+<div class="container no-list"></div>
+<h2>Busca Inválida</h2>
+
+
+{{/list}}
+
+</section>
+    
+
+{{>partials/footer}}

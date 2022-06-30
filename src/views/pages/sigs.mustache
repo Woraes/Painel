@@ -1,0 +1,36 @@
+{{>partials/header}}
+
+{{#banner}}
+<section class="banner" style="background-image: url('/images/{{background}}')">{{title}}</section>
+<h2>{{title}} {{descricao}}</h2>
+{{/banner}}
+<div class="containerbutton">
+    <div class="buttons">
+    <a href="http://sigs.net.br/login">Acessar o Site</a>
+    </div>
+</div>
+
+
+<section>
+
+  
+
+<!--iframe faz exibir um site dentro do outro -->
+<div>
+    <iframe name="iframe-ghbam" class="iframe" id="iframe-ghbam" src="http://sigs.net.br/login" 
+        frameborder="100px" cellspacing="0"
+    
+        sandbox="allow-same-origin  allow-scripts allow-top-navigation"
+      
+        
+        style="border-style: none; padding: 0px; "></iframe>
+</div>
+<div>
+    </div>  
+
+    </section>
+   
+
+    
+
+{{>partials/footer}}

@@ -1,0 +1,47 @@
+{{>partials/header}}
+
+{{#banner}}
+<section class="banner" style="background-image: url('/images/{{background}}')">{{title}}</section>
+<h2>{{title}} {{descricao}}</h2>
+{{/banner}}
+
+{{#list}}
+    <div class="item">
+        <a href="{{ link }}">
+        <img src="../images/{{ image }}" class="item--image"  />
+        <div class="item--name">{{ name }}.
+        </a>
+        </div>
+        <div class="item--color">{{ descri }}</div>
+        <div class="item--genre">{{ fabri }}</div>
+     </div>   
+     {{/list}}
+
+
+<div class="containerbutton">
+    <div class="buttons">
+    <a href="https://inovarepontodigital.com.br/login">Acessar o Site</a>
+    </div>
+</div>
+
+
+
+<section>
+
+  
+
+<!--iframe faz exibir um site dentro do outro -->
+<div>
+    <iframe name="iframe" class="iframe" id="iframe" src="https://inovarepontodigital.com.br/login" 
+        frameborder="100px" cellspacing="0"
+        style="border-style: none; padding: 0px; "></iframe>
+</div>
+<div>
+    </div>  
+
+    </section>
+   
+
+    <p><a href="https://inovarepontodigital.com.br/login" target="Ponto Biometrico"></a></p>
+
+{{>partials/footer}}
