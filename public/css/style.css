@@ -202,11 +202,18 @@ iframe {
 
 footer {
     border-top: 1px solid var(--lighter);
-    padding: 30px 0 !important;
+    padding:  10px 50px  !important;
     text-align: center;
     font-size: 16px;
     color: var(--new);
   
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+
+
 }
 .buttonsfooter a {
     display: inline-block;/*para espaçar*/
@@ -216,8 +223,8 @@ footer {
     font-size: 9px;
     font-weight: bold;
     text-decoration: none;/*retira o sublinhado*/
-    text-transform: uppercase;
-    box-shadow: 1px 2px 20px rgb(5, 5, 5);/*coloca sombra no botão*/
+    
+    box-shadow: 1px 1px 10px rgb(5, 5, 5);/*coloca sombra no botão*/
     border-radius: 2px;/*arredonda o botao*/
    
 }
