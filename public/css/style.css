@@ -246,6 +246,84 @@ footer .container {
 
 }
 
+
+
+
+}
+
+*{
+    box-sizing: border-box;
+}
+formbody{
+    margin: 0;
+}
+
+
+.screen{
+    display: flex;
+    height: 100vh;
+}
+
+
+.formleftside{
+    flex: 1;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    background-color: #50b6df;
+    
+  
+    
+}
+
+.formleftside img{
+    max-width:700px;
+    max-height:500px;
+    width: auto;
+    height: auto;
+    
+}
+.formrightside{
+    width: 400px;
+    background-color: rgb(98, 218, 223);
+    padding: 50px;
+    
+}
+
+.formrightside label{
+    display: block;
+    margin-bottom: 20px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.formbuttons  {
+    display: inline-block;/*para espaçar*/
+    background-color: black;
+    color: rgb(106, 207, 233);
+    padding: 20px 40px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;/*retira o sublinhado*/
+    text-transform: uppercase;
+    box-shadow: 1px 2px 20px rgb(5, 5, 5);/*coloca sobra no botão*/
+    border-radius: 10px;/*arredonda o botao*/
+    margin-right: 10px;
+}
+.formbuttons:hover{
+ opacity: 0.5;
+}
+
+
+.formrightside input{
+    width: 100%;
+    border:  1px solid #999;
+    border-radius: 5px;
+    padding: 8px;
+    font-size:  14px;
+}
 @media (max-width: 900px) {
     .list {
         grid-template-columns: repeat(4, 1fr);
@@ -288,6 +366,7 @@ footer .container {
 @media (max-width: 450px) {
     header .container {
         flex-direction: column;
+        padding: 15px;
     }
     header input {
         max-width: 100%;
@@ -306,17 +385,40 @@ footer .container {
     }
 
     .screen{
+        display: flex;
         flex-direction: column;
+       
+               
     }
    
     .formrleftside{
-       background-position: 20px -15px;
-       max-width: max-content;
+    
+     display: flex;
+     max-width: 100%;
+     margin-right: 0;
+     margin-bottom: 20px;
+      
         
+    }
+    .formleftside img{
+        max-width:400px;
+        max-height:500px;
+        width: auto;
+        height: auto;
+    }
+    .formrightside{
+   
+     display: flex;
+     flex-direction: column;
+    padding: 10px; 
+    }
+    .formrightside input{
+        padding:  12px;
+        width: 90%;
     }
     .containerbutton{
         flex: 1;
-        display: flex;
+        display: block;
         justify-content: center;/*centralizar*/
         align-items: center;/*centralizar*/
         padding: 20px;
@@ -325,78 +427,4 @@ footer .container {
     .buttons a{
         padding: 7px 6px;
     }
-
-
-}
-
-*{
-    box-sizing: border-box;
-}
-formbody{
-    margin: 0;
-}
-
-
-.screen{
-    display: flex;
-    height: 100vh;
-}
-
-
-.formleftside{
-    flex: 1;
-    width: 300px;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    background-color: #50b6df;
-    background-image: url('../images/form.png');
-    background-size: cover;
-    background-position:  10px -50px;
-    padding: 50px;
-    
-}
-
-.formleftside img{
-    
-    
-}
-.formrightside{
-    width: 400px;
-    background-color: rgb(98, 218, 223);
-    padding: 50px;
-    
-}
-
-.formrightside label{
-    display: block;
-    margin-bottom: 20px;
-    font-weight: bold;
-    padding: 5px;
-}
-
-.formbuttons  {
-    display: inline-block;/*para espaçar*/
-    background-color: black;
-    color: rgb(106, 207, 233);
-    padding: 20px 40px;
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;/*retira o sublinhado*/
-    text-transform: uppercase;
-    box-shadow: 1px 2px 20px rgb(5, 5, 5);/*coloca sobra no botão*/
-    border-radius: 10px;/*arredonda o botao*/
-    margin-right: 10px;
-}
-.formbuttons:hover{
- opacity: 0.5;
-}
-
-
-.formrightside input{
-    width: 100%;
-    border:  1px solid #999;
-    border-radius: 5px;
-    padding: 8px;
-    font-size:  14px;
 }
