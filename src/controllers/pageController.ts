@@ -146,5 +146,16 @@ export const pontobiometrico = (req: Request, res: Response) =>{
     });
    
    }
-    
+   export const loginci = (req: Request, res: Response) =>{
 
+    res.render('pages/loginci',{
+      banner:{
+        title:'Login CI',
+        background:'',
+        descricao:'Faça Seu Login',
+        
+      },
+      menu: createMenuObject(""),
+    });
+    
+  }

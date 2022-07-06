@@ -13,19 +13,19 @@
 
 </div>
 <div class="formrightside">
-    <h1>Crie uma conta</h1><br/>
-    <form action="" method="POST" class="b7validator">
+    <h1>Em Desenvolvimento</h1><br/>
+    <form action="/novousuario" method="" class="b7validator">
         <label for="">
             Seu nome:<br/>
-            <input type="text" name="name"  placeholder="Seu nome..." data-rules="required" />
+            <input type="text" name="name" id="name"  placeholder="Seu nome..." data-rules="" required />
         </label>
         <label for="">
             Seu e-mail:<br/>
-            <input type="text" name="email"  placeholder="Seu e-mail..."/>
+            <input type="text" name="email"  placeholder="Seu e-mail..." data-rules=""/>
         </label>
         <label for="">
         Sua  senha:<br/>
-            <input type="password" name="password"  placeholder="password..."/>
+            <input type="password" name="password"  placeholder="password..." data-rules=""/>
         </label>
         <label for="">
             <input class="formbuttons" type="submit" value="Cadastrar"/>
@@ -33,12 +33,17 @@
     </form>
 
     <div>
-        Já tem uma conta?<a href=""> Faça o Login </a>
+        Já tem uma conta?<a href="/loginci"> Faça o Login </a>
     </div>
 </div>
 </div>
 
+<ul>
+    {{#usersci}}
+        <li>Nome: {{name}} - Idade: {{age}}</li>
+    {{/usersci}}
 
+</ul>
 
 
 
