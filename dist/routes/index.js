@@ -36,5 +36,6 @@ router.get('/ghbam', PageController.ghbam);
 router.get('/pacs', PageController.pacs);
 router.get('/ris', PageController.ris);
 router.get('/esus', PageController.esus);
+router.get('/prodig', PageController.prodig);
 router.get('/search', SearchController.search);
 exports.default = router;

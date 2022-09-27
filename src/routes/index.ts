@@ -17,8 +17,9 @@ router.get('/cisms',PageController.cisms );
 router.get('/ghbam',PageController.ghbam );
 router.get('/pacs',PageController.pacs );
 router.get('/ris',PageController.ris );
+router.get('/progdig', PageController.progdig)
 router.get('/esus',PageController.esus );
-router.get('/loginci', PageController.loginci)
+
 router.post('/novousuario', UserciController.novoUsuario)
 
 router.get('/search',SearchController.search);

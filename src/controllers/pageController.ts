@@ -1,3 +1,4 @@
+import { progdig } from './pageController';
 import { Request, Response } from "express";
 
 //importar o models criado para filtragem de busca
@@ -146,16 +147,17 @@ export const pontobiometrico = (req: Request, res: Response) =>{
     });
    
    }
-   export const loginci = (req: Request, res: Response) =>{
 
-    res.render('pages/loginci',{
+  export const progdig = (req: Request, res: Response) =>{
+
+    res.render('pages/progdig',{
       banner:{
-        title:'Login CI',
-        background:'',
-        descricao:'Faça Seu Login',
+        title:'PROGDIG',
+        background:'progdig.png.png',
+        descricao:'Processo Digitais',
         
       },
-      menu: createMenuObject(""),
+      menu: createMenuObject("progdig"),
     });
-    
-  }
+   
+   }

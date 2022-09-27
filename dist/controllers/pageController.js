@@ -29,6 +29,7 @@ const home = (req, res) => {
     });
 };
 exports.home = home;
+
 const pontobiometrico = (req, res) => {
     let list = Sistemas_1.Sistema.chamaNome('pontobiometrico');
     res.render('pages/pontobiometrico', {
@@ -42,6 +43,7 @@ const pontobiometrico = (req, res) => {
     });
 };
 exports.pontobiometrico = pontobiometrico;
+
 const sigs = (req, res) => {
     //res.redirect('https://inovarepontodigital.com.br/login');
     res.render('pages/sigs', {
@@ -54,6 +56,7 @@ const sigs = (req, res) => {
     });
 };
 exports.sigs = sigs;
+
 const samu = (req, res) => {
     res.render('pages/samu', {
         banner: {
@@ -65,6 +68,7 @@ const samu = (req, res) => {
     });
 };
 exports.samu = samu;
+
 const cisms = (req, res) => {
     res.render('pages/cisms', {
         banner: {
@@ -76,6 +80,7 @@ const cisms = (req, res) => {
     });
 };
 exports.cisms = cisms;
+
 const ghbam = (req, res) => {
     res.render('pages/ghbam', {
         banner: {
@@ -87,6 +92,7 @@ const ghbam = (req, res) => {
     });
 };
 exports.ghbam = ghbam;
+
 const pacs = (req, res) => {
     res.render('pages/pacs', {
         banner: {
@@ -98,6 +104,7 @@ const pacs = (req, res) => {
     });
 };
 exports.pacs = pacs;
+
 const ris = (req, res) => {
     res.render('pages/ris', {
         banner: {
@@ -109,6 +116,7 @@ const ris = (req, res) => {
     });
 };
 exports.ris = ris;
+
 const esus = (req, res) => {
     res.render('pages/esus', {
         banner: {
@@ -120,3 +128,16 @@ const esus = (req, res) => {
     });
 };
 exports.esus = esus;
+
+
+const prodig = (req, res) => {
+    res.render('pages/prodig', {
+        banner: {
+            title: 'PRODIG',
+            background: 'prodig.png.png',
+            descricao: 'Processos Digitas',
+        },
+        menu: (0, createMenuObject_1.createMenuObject)("prodig"),
+    });
+};
+exports.prodig = prodig;
