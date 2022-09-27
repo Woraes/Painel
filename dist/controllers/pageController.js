@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.esus = exports.ris = exports.pacs = exports.ghbam = exports.cisms = exports.samu = exports.sigs = exports.pontobiometrico = exports.home = void 0;
+exports.prodig = exports.loginci = exports.esus = exports.ris = exports.pacs = exports.ghbam = exports.cisms = exports.samu = exports.sigs = exports.pontobiometrico = exports.home = void 0;
 //importar o models criado para filtragem de busca
 const Sistemas_1 = require("../models/Sistemas");
 //importar a função criada para ACTIVE que está no helper
@@ -120,3 +120,25 @@ const esus = (req, res) => {
     });
 };
 exports.esus = esus;
+const loginci = (req, res) => {
+    res.render('pages/loginci', {
+        banner: {
+            title: 'Login CI',
+            background: '',
+            descricao: 'Faça Seu Login',
+        },
+        menu: (0, createMenuObject_1.createMenuObject)(""),
+    });
+};
+exports.loginci = loginci;
+const prodig = (req, res) => {
+    res.render('pages/prodig', {
+        banner: {
+            title: 'PRODIGI',
+            background: 'prodig.png.png',
+            descricao: 'Processos Digitais',
+        },
+        menu: (0, createMenuObject_1.createMenuObject)("prodig"),
+    });
+};
+exports.prodig = prodig;

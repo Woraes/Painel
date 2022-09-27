@@ -8,11 +8,11 @@
 
 <div class="containerbutton">
     <div class="buttons">
-    <a href="http://pacs.itaguai.rj.gov.br:9596">Acesso Externo</a>
-
-    <a href="http://pacs.itg.rio">Acesso Interno</a>
+    <a href="http://192.168.10.191:8080">Acessar o Site</a>
+    
     </div>
 </div>
+
 
 
 <section>
@@ -21,11 +21,9 @@
 
 <!--iframe faz exibir um site dentro do outro -->
 <div>
-    <iframe name="iframe" class="iframe" 
-    meta=" http-equiv="Content-Security-Policy content="upgrade-insecure-requests" 
-    id="iframe" src="http://pacs.itaguai.rj.gov.br:9596/index.php" 
+    <iframe name="iframe" class="iframe" id="iframe" src="" 
         frameborder="100px" cellspacing="0"
-        sandbox="allow-same-origin  allow-scripts allow-top-navigation allow-forms "
+        sandbox="allow-same-origin  allow-scripts allow-top-navigation allow-forms allow-popups-to-escape-sandbox allow-popups"
         style="border-style: none; padding: 0px; "></iframe>
 </div>
 <div>
@@ -34,6 +32,6 @@
     </section>
    
 
-    <p><a href="https://inovarepontodigital.com.br/login" target="Ponto Biometrico"></a></p>
+    <p><a href="" target="Ponto Biometrico"></a></p>
 
 {{>partials/footer}}

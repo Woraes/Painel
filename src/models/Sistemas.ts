@@ -18,7 +18,7 @@ import { type } from "os";
 
 
 
-type SistemType = 'pontobiometrico' |'sigs' | 'samu'| 'cisms' | 'ghbam' | 'pacs' | 'ris' |'esus'
+type SistemType = 'pontobiometrico' |'sigs' | 'samu'| 'cisms' | 'ghbam' | 'pacs' | 'ris' |'esus' | 'prodig'
 type Sistema = {
     type: SistemType,
     image: string,
@@ -108,6 +108,16 @@ const data: Sistema[] = [
     descri:'Estratégia e-SUS Atenção Primária',
     fabri:'Secrétaria de Saúde',
     link:'/esus',
+
+},
+{
+    type:'prodig',
+    image:'../images/prodig.gif',
+    name:'PRODIGI',
+    color:'',
+    descri:'Processos Digitais',
+    fabri:'Secrétaria de Saúde',
+    link:'/prodig',
 
 },
 ]

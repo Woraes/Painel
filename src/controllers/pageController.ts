@@ -159,3 +159,16 @@ export const pontobiometrico = (req: Request, res: Response) =>{
     });
     
   }
+  export const prodig = (req: Request, res: Response) =>{
+
+    res.render('pages/prodig',{
+      banner:{
+        title:'PRODIGI',
+        background:'prodig.png.png',
+        descricao:'Processos Digitais',
+        
+      },
+      menu: createMenuObject("prodig"),
+    });
+    
+  }

@@ -1,7 +1,7 @@
 
 
 //2º criar um type para ele  MenuOpition coloco as opções para ele
-type MenuOpition = '' | 'todos' | 'pontobiometrico' |'sigs' | 'samu'| 'cisms' | 'ghbam' | 'pacs' | 'ris' |'esus' ;
+type MenuOpition = '' | 'todos' | 'pontobiometrico' |'sigs' | 'samu'| 'cisms' | 'ghbam' | 'pacs' | 'ris' |'esus' | 'prodig' ;
 
 
 
@@ -20,7 +20,8 @@ export const createMenuObject = (activeMenu: MenuOpition) =>{
         ghbam:false,
         pacs:false,
         ris:false,
-        esus:false
+        esus:false,
+        prodig:false,
 
     };
     //5º entre um e outro vamos trasformar o objeto que eu quero em true

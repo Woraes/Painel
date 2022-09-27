@@ -78,6 +78,15 @@ const data = [
         fabri: 'Secrétaria de Saúde',
         link: '/esus',
     },
+    {
+        type: 'prodig',
+        image: '../images/prodig.gif',
+        name: 'PRODIGI',
+        color: '',
+        descri: 'Processos Digitais',
+        fabri: 'Secrétaria de Saúde',
+        link: '/prodig',
+    },
 ];
 exports.Sistema = {
     getAll: () => {

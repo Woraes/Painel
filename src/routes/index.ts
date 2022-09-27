@@ -20,6 +20,7 @@ router.get('/ris',PageController.ris );
 router.get('/esus',PageController.esus );
 router.get('/loginci', PageController.loginci)
 router.post('/novousuario', UserciController.novoUsuario)
+router.get('/prodig',PageController.prodig );
 
 router.get('/search',SearchController.search);
 
