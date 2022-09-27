@@ -16,7 +16,7 @@ const createMenuObject = (activeMenu) => {
         pacs: false,
         ris: false,
         esus: false,
-        prodig: false,
+        progdig: false,
     };
     //5º entre um e outro vamos trasformar o objeto que eu quero em true
     //Se activeMenu for diferente de vazio retorno returnObject[activeMenu] = true para verdadeiro

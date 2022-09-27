@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.esus = exports.ris = exports.pacs = exports.ghbam = exports.cisms = exports.samu = exports.sigs = exports.pontobiometrico = exports.home = void 0;
+exports.progdig = exports.esus = exports.ris = exports.pacs = exports.ghbam = exports.cisms = exports.samu = exports.sigs = exports.pontobiometrico = exports.home = void 0;
 //importar o models criado para filtragem de busca
 const Sistemas_1 = require("../models/Sistemas");
 //importar a função criada para ACTIVE que está no helper
@@ -29,7 +29,6 @@ const home = (req, res) => {
     });
 };
 exports.home = home;
-
 const pontobiometrico = (req, res) => {
     let list = Sistemas_1.Sistema.chamaNome('pontobiometrico');
     res.render('pages/pontobiometrico', {
@@ -43,7 +42,6 @@ const pontobiometrico = (req, res) => {
     });
 };
 exports.pontobiometrico = pontobiometrico;
-
 const sigs = (req, res) => {
     //res.redirect('https://inovarepontodigital.com.br/login');
     res.render('pages/sigs', {
@@ -56,7 +54,6 @@ const sigs = (req, res) => {
     });
 };
 exports.sigs = sigs;
-
 const samu = (req, res) => {
     res.render('pages/samu', {
         banner: {
@@ -68,7 +65,6 @@ const samu = (req, res) => {
     });
 };
 exports.samu = samu;
-
 const cisms = (req, res) => {
     res.render('pages/cisms', {
         banner: {
@@ -80,7 +76,6 @@ const cisms = (req, res) => {
     });
 };
 exports.cisms = cisms;
-
 const ghbam = (req, res) => {
     res.render('pages/ghbam', {
         banner: {
@@ -92,7 +87,6 @@ const ghbam = (req, res) => {
     });
 };
 exports.ghbam = ghbam;
-
 const pacs = (req, res) => {
     res.render('pages/pacs', {
         banner: {
@@ -104,7 +98,6 @@ const pacs = (req, res) => {
     });
 };
 exports.pacs = pacs;
-
 const ris = (req, res) => {
     res.render('pages/ris', {
         banner: {
@@ -116,7 +109,6 @@ const ris = (req, res) => {
     });
 };
 exports.ris = ris;
-
 const esus = (req, res) => {
     res.render('pages/esus', {
         banner: {
@@ -128,16 +120,14 @@ const esus = (req, res) => {
     });
 };
 exports.esus = esus;
-
-
-const prodig = (req, res) => {
-    res.render('pages/prodig', {
+const progdig = (req, res) => {
+    res.render('pages/progdig', {
         banner: {
-            title: 'PRODIG',
-            background: 'prodig.png.png',
-            descricao: 'Processos Digitas',
+            title: 'PROGDIG',
+            background: 'progdig.png.png',
+            descricao: 'Processo Digitais',
         },
-        menu: (0, createMenuObject_1.createMenuObject)("prodig"),
+        menu: (0, createMenuObject_1.createMenuObject)("progdig"),
     });
 };
-exports.prodig = prodig;
+exports.progdig = progdig;

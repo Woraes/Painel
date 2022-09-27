@@ -1,4 +1,3 @@
-import { progdig } from './pageController';
 import { Request, Response } from "express";
 
 //importar o models criado para filtragem de busca

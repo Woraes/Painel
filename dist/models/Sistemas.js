@@ -79,13 +79,13 @@ const data = [
         link: '/esus',
     },
     {
-        type: 'prodig',
-        image: '../images/prodig.gif',
-        name: 'PRODIG',
+        type: 'progdig',
+        image: '../images/progdig.gif',
+        name: 'PROGDIG',
         color: '',
-        descri: 'Processos Digitas',
+        descri: 'Processos Digitais',
         fabri: 'Secrétaria de Saúde',
-        link: '/prodig',
+        link: '/progdig',
     },
 ];
 exports.Sistema = {
