@@ -78,18 +78,18 @@ export const pontobiometrico = (req: Request, res: Response) =>{
    
    }
 
-   export const cisms = (req: Request, res: Response) =>{
-    res.render('pages/cisms',{
-      banner:{
-        title:'Controle de CI',
-        background:'ci.jpeg',
-        descricao:'Pagina em construção',
+  //  export const cisms = (req: Request, res: Response) =>{
+  //   res.render('pages/cisms',{
+  //     banner:{
+  //       title:'Controle de CI',
+  //       background:'ci.jpeg',
+  //       descricao:'Pagina em construção',
         
-      },
-      menu: createMenuObject("cisms"),
-    });
+  //     },
+  //     menu: createMenuObject("cisms"),
+  //   });
    
-   }
+  //  }
 
    export const ghbam = (req: Request, res: Response) =>{
 
@@ -133,19 +133,19 @@ export const pontobiometrico = (req: Request, res: Response) =>{
    
    }
 
-   export const esus = (req: Request, res: Response) =>{
+  //  export const esus = (req: Request, res: Response) =>{
 
-    res.render('pages/esus',{
-      banner:{
-        title:'ESUS',
-        background:'esus.png',
-        descricao:'Estratégia e-SUS Atenção Primária',
+  //   res.render('pages/esus',{
+  //     banner:{
+  //       title:'ESUS',
+  //       background:'esus.png',
+  //       descricao:'Estratégia e-SUS Atenção Primária',
         
-      },
-      menu: createMenuObject("esus"),
-    });
+  //     },
+  //     menu: createMenuObject("esus"),
+  //   });
    
-   }
+  //  }
    export const loginci = (req: Request, res: Response) =>{
 
     res.render('pages/loginci',{

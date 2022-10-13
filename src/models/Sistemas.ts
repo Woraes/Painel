@@ -18,7 +18,7 @@ import { type } from "os";
 
 
 
-type SistemType = 'pontobiometrico' |'sigs' | 'samu'| 'cisms' | 'ghbam' | 'pacs' | 'ris' |'esus' | 'prodig'
+type SistemType = 'pontobiometrico' |'sigs' | 'samu'| '' | 'ghbam' | 'pacs' | 'ris' |'' | 'prodig'
 type Sistema = {
     type: SistemType,
     image: string,
@@ -60,16 +60,16 @@ const data: Sistema[] = [
     link:'/samu',
 
 },
-{
-    type:'cisms',
-    image:'../images/cigif.gif',
-    name:'Controle de CI',
-    color:'',
-    descri:'Pagina em construção',
-    fabri:'WoraesApp',
-    link:'/cisms',
+// {
+//     type:'cisms',
+//     image:'../images/cigif.gif',
+//     name:'Controle de CI',
+//     color:'',
+//     descri:'Pagina em construção',
+//     fabri:'WoraesApp',
+//     link:'/cisms',
 
-},
+// },
 {
     type:'ghbam',
     image:'../images/ghbamgif.gif',
@@ -100,16 +100,16 @@ const data: Sistema[] = [
     link:'/ris',
 
 },
-{
-    type:'esus',
-    image:'../images/esusgifgif.gif',
-    name:'E-SUS',
-    color:'',
-    descri:'Estratégia e-SUS Atenção Primária',
-    fabri:'Secrétaria de Saúde',
-    link:'/esus',
+// {
+//     type:'esus',
+//     image:'../images/esusgifgif.gif',
+//     name:'E-SUS',
+//     color:'',
+//     descri:'Estratégia e-SUS Atenção Primária',
+//     fabri:'Secrétaria de Saúde',
+//     link:'/esus',
 
-},
+// },
 {
     type:'prodig',
     image:'../images/prodig.gif',

@@ -11,11 +11,9 @@ const createMenuObject = (activeMenu) => {
         pontobiometrico: false,
         sigs: false,
         samu: false,
-        cisms: false,
         ghbam: false,
         pacs: false,
         ris: false,
-        esus: false,
         prodig: false,
     };
     //5º entre um e outro vamos trasformar o objeto que eu quero em true

@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.prodig = exports.loginci = exports.esus = exports.ris = exports.pacs = exports.ghbam = exports.cisms = exports.samu = exports.sigs = exports.pontobiometrico = exports.home = void 0;
+exports.prodig = exports.loginci = exports.ris = exports.pacs = exports.ghbam = exports.samu = exports.sigs = exports.pontobiometrico = exports.home = void 0;
 //importar o models criado para filtragem de busca
 const Sistemas_1 = require("../models/Sistemas");
 //importar a função criada para ACTIVE que está no helper
@@ -65,17 +65,16 @@ const samu = (req, res) => {
     });
 };
 exports.samu = samu;
-const cisms = (req, res) => {
-    res.render('pages/cisms', {
-        banner: {
-            title: 'Controle de CI',
-            background: 'ci.jpeg',
-            descricao: 'Pagina em construção',
-        },
-        menu: (0, createMenuObject_1.createMenuObject)("cisms"),
-    });
-};
-exports.cisms = cisms;
+//  export const cisms = (req: Request, res: Response) =>{
+//   res.render('pages/cisms',{
+//     banner:{
+//       title:'Controle de CI',
+//       background:'ci.jpeg',
+//       descricao:'Pagina em construção',
+//     },
+//     menu: createMenuObject("cisms"),
+//   });
+//  }
 const ghbam = (req, res) => {
     res.render('pages/ghbam', {
         banner: {
@@ -109,17 +108,16 @@ const ris = (req, res) => {
     });
 };
 exports.ris = ris;
-const esus = (req, res) => {
-    res.render('pages/esus', {
-        banner: {
-            title: 'ESUS',
-            background: 'esus.png',
-            descricao: 'Estratégia e-SUS Atenção Primária',
-        },
-        menu: (0, createMenuObject_1.createMenuObject)("esus"),
-    });
-};
-exports.esus = esus;
+//  export const esus = (req: Request, res: Response) =>{
+//   res.render('pages/esus',{
+//     banner:{
+//       title:'ESUS',
+//       background:'esus.png',
+//       descricao:'Estratégia e-SUS Atenção Primária',
+//     },
+//     menu: createMenuObject("esus"),
+//   });
+//  }
 const loginci = (req, res) => {
     res.render('pages/loginci', {
         banner: {

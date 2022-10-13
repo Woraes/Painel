@@ -1,7 +1,7 @@
 
 
 //2º criar um type para ele  MenuOpition coloco as opções para ele
-type MenuOpition = '' | 'todos' | 'pontobiometrico' |'sigs' | 'samu'| 'cisms' | 'ghbam' | 'pacs' | 'ris' |'esus' | 'prodig' ;
+type MenuOpition = '' | 'todos' | 'pontobiometrico' |'sigs' | 'samu'| '' | 'ghbam' | 'pacs' | 'ris' |'' | 'prodig' ;
 
 
 
@@ -16,11 +16,11 @@ export const createMenuObject = (activeMenu: MenuOpition) =>{
         pontobiometrico:false,
         sigs:false,
         samu:false,
-        cisms:false,
+     
         ghbam:false,
         pacs:false,
         ris:false,
-        esus:false,
+
         prodig:false,
 
     };
